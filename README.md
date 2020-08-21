@@ -5,7 +5,10 @@
 
 The Tech Academy Live Project was both an exercise in the Agile/Scrum method of Project Management and a great experience in diving into the inner workings of the Python based web-framework Django. I spent two weeks working with a team of student collegues in developing various web applications to track and catalog a variety of hobbies and interests. Working with Django on a major project for the first time was an excellent learning opportunity to understand MVT on a deeper level and it's direct relation to a SQL database. Roadblocks came and were overcome. Redesign of the model structure of the database became a necessity to fix bugs. Coming up with solutions for problems was at times frustrating but fullfilling once overcome. 
 
-Here you will find details of the stories I completed with supporting code snippets. 
+Here you will find details of the stories I completed with supporting code snippets.
+
+
+# Back-End Stories:
 
 
 
