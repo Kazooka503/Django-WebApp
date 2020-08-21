@@ -1,2 +1,3 @@
 # Live Project
-# Description:
+
+![GitHub Logo](/images/logo.png)
