@@ -75,6 +75,26 @@ class Migration(migrations.Migration):
 
 ```
 
+## Editing Cataloged Items
+
+In addition to adding new items to the database, a requirement for the project was the ability to edit the information of existing stored objects in the database. I achieved this by creating a view that populated the existing html form page with instance data of a user selected object. 
+
+```
+def strain_update_view(request, pk):
+    strain = Strain.objects.get(id=pk)
+    form = StrainForm(instance=strain)
+
+    if request.method == "POST":
+        form = StrainForm(request.POST, instance=strain)
+        if form.is_valid():
+            form.save()
+            return redirect('../../index/')
+
+    context = {'form': form}
+    return render(request, 'ReliefLeafApp/ReliefLeafApp_strain_create.html', context)
+
+```
+
 ## Bootstrap Styling 
 
 Integrating Bootstrap to work with a Django model forms meant integrating styling into the form class itself. 
