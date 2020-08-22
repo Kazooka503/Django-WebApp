@@ -1,7 +1,7 @@
 
 ![LiveProject Logo](http://www.austinkrzciok.com/img/lp_logo.jpg)
 
-## Introduction:
+# Introduction:
 
 The Tech Academy Live Project was both an exercise in the Agile/Scrum method of Project Management and a great experience in diving into the inner workings of the Python based web-framework Django. I spent two weeks working with a team of student collegues in developing various web applications to track and catalog a variety of hobbies and interests. My web application was designed as a possible tool for up and coming cannabis industry. It allows you store different cannabis strains to a database with specific data about that strain.
 
