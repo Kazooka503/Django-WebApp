@@ -3,7 +3,7 @@
 
 # Introduction:
 
-The Tech Academy Live Project was both an exercise in the Agile/Scrum method of Project Management and a great experience in diving into the inner workings of the Python based web-framework Django. I spent two weeks working with a team of student collegues in developing various web applications to track and catalog a variety of hobbies and interests. My web application was designed as a possible tool for up and coming cannabis industry. It allows you store different cannabis strains to a database with specific data about that strain.
+My first Tech Academy Live Project was both an exercise in the Agile/Scrum method of Project Management and a great experience in diving into the inner workings of the Python based web-framework Django. I spent two weeks working with a team of student collegues in developing various web applications to track and catalog a variety of hobbies and interests. My web application was designed as a possible tool for up and coming cannabis industry. It allows you store different cannabis strains to a database with specific data about that strain.
 
 Working with Django on a major project for the first time was an excellent learning opportunity to understand MVT on a deeper level and it's direct relation to a SQL database. Roadblocks came and were overcome. Redesign of the model structure of the database became a necessity to fix bugs. Coming up with solutions for problems was at times frustrating but fullfilling once overcome. 
 
