@@ -11,7 +11,7 @@ Here you will find details of the stories I completed with supporting code snipp
 
 
 # Project Stories:
-* [Many To Many Relationship](#many-to-many-relationship)
+* [Many To Many Relationship](#many-to-many-model-relationship)
 * [Edit & Delete](#edit--delete-cataloged-items)
 * [Bootstrap Styling](#bootstrap-styling)
 * [Other Skills Acquired](#other-skills-acquired)
