@@ -7,7 +7,7 @@ My first Tech Academy Live Project was both an exercise in the Agile/Scrum metho
 
 Working with Django on a major project for the first time was an excellent learning opportunity to understand MVT on a deeper level and it's direct relation to a SQL database. Roadblocks came and were overcome. Redesign of the model structure of the database became a necessity to fix bugs. Coming up with solutions for problems was at times frustrating but fullfilling once overcome. 
 
-Here you will find details of the stories I completed with supporting code snippets.
+Here you will find development stories related to my project with supporting code snippets.
 
 
 # Project Stories:
