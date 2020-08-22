@@ -75,7 +75,7 @@ class Migration(migrations.Migration):
 
 ## Bootstrap Styling 
 
-Integrating Bootstrap to work with a Django model forms meant seperating the form out with tags relating to each of it's columns as well ass integrating styling into the form class itself. 
+Integrating Bootstrap to work with a Django model forms meant integrating styling into the form class itself. 
 
 ### forms.py 
 
@@ -92,6 +92,23 @@ class StrainForm(ModelForm):
             'percentage': forms.NumberInput(attrs={'class': 'form-control'}),
             'description': forms.Textarea(attrs={'class': 'form-control'}),
         }
+
+```
+
+And on the front-end side wrapping the form in a div with the Bootstrap class of "form-group"
+
+```
+
+<div class="jumbotron">
+        <div class="form-group col-md-12">
+        <form action='.' method='POST'>{% csrf_token %}
+                <h1>Strain To Save</h1><br />
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-dark" value='Save' id='strainInput'>Submit</button>
+        </form>
+        </div>
+</div>
+
 
 ```
 
