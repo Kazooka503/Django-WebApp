@@ -77,7 +77,7 @@ class Migration(migrations.Migration):
 
 ## Editing Cataloged Items
 
-In addition to adding new items to the database, a requirement for the project was the ability to edit the information of existing stored objects in the database. I achieved this by creating a view that populated the existing html form page with instance data of a user selected object. 
+In addition to adding new items to the database, a requirement for the project was the ability to edit the information of existing stored objects. I achieved this by creating a view that populated the existing html form page with instance data of a user selected object. 
 
 ```
 def strain_update_view(request, pk):
