@@ -14,8 +14,7 @@ Here you will find details of the stories I completed with supporting code snipp
 
 A user needed to be able to select multiple options on a web form field in relation to the primary model object they needed to store in the database. This meant the web application I was developing required two seperate tables to be created.  A secondary model become the basis to accomplish this, by using a CharField for the data type inside the second model, I was able to link it to the primary model via a ManyToMany Field.
 
-'''
-from django.db import models
+'''from django.db import models
 
 
 class Terpene(models.Model):
@@ -36,8 +35,7 @@ class Strain(models.Model):
     percentage = models.DecimalField(default=0.00, max_digits=1000, decimal_places=1)
     description = models.TextField(blank=False, null=True)
 
-    objects = models.Manager()
-'''
+    objects = models.Manager()'''
 
 
 
