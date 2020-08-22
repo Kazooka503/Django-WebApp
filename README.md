@@ -38,6 +38,40 @@ class Strain(models.Model):
     objects = models.Manager()
 ```
 
+In order to have the correct form choices, the secondary table needed to be seeded with data. I hard coded a data migration file to presupply the necessary data for the form.
+
+```
+
+from __future__ import unicode_literals
+from django.db import models, migrations
+
+
+def load_terpenes(apps, schema_editor):
+    Terpene = apps.get_model("ReliefLeafApp", "Terpene")
+    terp_limonene = Terpene(id=0, name='Limonene')
+    terp_limonene.save()
+    terp_myrcene = Terpene(id=1, name='Myrcene')
+    terp_myrcene.save()
+    terp_pinene = Terpene(id=2, name='Pinene')
+    terp_pinene.save()
+    terp_terpinolene = Terpene(id=3, name='Terpinolene')
+    terp_terpinolene.save()
+    terp_caryophyllene = Terpene(id=4, name='Caryophyllene')
+    terp_caryophyllene.save()
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('ReliefLeafApp', '0025_auto_20200820_2306'),
+    ]
+
+    operations = [
+        migrations.RunPython(load_terpenes)
+    ]
+
+
+```
 
 
 
