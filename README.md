@@ -79,6 +79,7 @@ class Migration(migrations.Migration):
 
 In addition to adding new items to the database, a requirement for the project was the ability to edit the information of existing stored objects. I achieved this by creating a view that populated the existing html form page with instance data of a user selected object. 
 
+### Edit 
 ```
 def strain_update_view(request, pk):
     strain = Strain.objects.get(id=pk)
@@ -92,6 +93,22 @@ def strain_update_view(request, pk):
 
     context = {'form': form}
     return render(request, 'ReliefLeafApp/ReliefLeafApp_strain_create.html', context)
+
+```
+As well as editing, we we're required to implement functionality that allowed a user to remove an object from the database. However this time I sent the user to an html page to confirm the deleted selection. 
+
+### Delete
+
+```
+
+def delete_strain(request, pk):
+    strain = Strain.objects.get(id=pk)
+    if request.method == "POST":
+        strain.delete()
+        return redirect('../../index/')
+    context = {'item': strain}
+    return render(request, 'ReliefLeafApp/ReliefLeafApp_delete.html', context)
+
 
 ```
 
