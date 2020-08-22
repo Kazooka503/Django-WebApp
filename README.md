@@ -97,6 +97,8 @@ class StrainForm(ModelForm):
 
 And on the front-end side wrapping the form in a div with the Bootstrap class of "form-group"
 
+### form html 
+
 ```
 
 <div class="jumbotron">
