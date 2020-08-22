@@ -157,7 +157,13 @@ And on the front-end side wrapping the form in a div with the Bootstrap class of
 
 ```
 
-# Other Skills Acquired 
+## Other Skills Acquired
+
+* Direct experience in AGILE/SCRUM 
+* Experience using Azure DevOps
+* A deepend understanding of SQL and databases
+* Exerience in communicating ideas and concepts to others, including fellow peers and project leads.
+* Experience in sourcing data and information to overcome unexpected problems. 
 
 
 
