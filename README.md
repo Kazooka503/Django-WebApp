@@ -8,7 +8,7 @@ The Tech Academy Live Project was both an exercise in the Agile/Scrum method of 
 Here you will find details of the stories I completed with supporting code snippets.
 
 
-# Back-End Stories:
+# Project Stories:
 
 ## Many-To-Many Model Relationship
 
@@ -70,6 +70,28 @@ class Migration(migrations.Migration):
         migrations.RunPython(load_terpenes)
     ]
 
+
+```
+
+## Bootstrap Styling 
+
+Integrating Bootstrap to work with a Django model forms meant seperating the form out with tags relating to each of it's columns as well ass integrating styling into the form class itself. 
+
+### forms.py 
+
+```
+
+class StrainForm(ModelForm):
+    class Meta:
+        model = Strain
+        fields = ('name', 'type', 'terpene', 'percentage', 'description')
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'type': forms.RadioSelect(choices=TYPE_CHOICES),
+            'terpene': forms.CheckboxSelectMultiple(choices=TERPENE_CHOICES),
+            'percentage': forms.NumberInput(attrs={'class': 'form-control'}),
+            'description': forms.Textarea(attrs={'class': 'form-control'}),
+        }
 
 ```
 
