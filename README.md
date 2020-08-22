@@ -75,7 +75,7 @@ class Migration(migrations.Migration):
 
 ```
 
-## Editing Cataloged Items
+## Edit & Delete Cataloged Items
 
 In addition to adding new items to the database, a requirement for the project was the ability to edit the information of existing stored objects. I achieved this by creating a view that populated the existing html form page with instance data of a user selected object. 
 
